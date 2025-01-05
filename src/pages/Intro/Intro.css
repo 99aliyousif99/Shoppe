@@ -1,0 +1,59 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    height: 100vh; 
+    gap: 10px;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100px;
+    width: 130px;
+    height: 130px;
+    box-shadow: 0px 3px 8px 0px #00000029;
+    margin-top: 300px;
+  
+  }
+  
+  .main .started{
+    width: 335px;
+    height: 61px;
+    opacity: 0px;
+    border-radius: 16px;
+    background-color: #004CFF;
+    color: white;
+    border: none;
+  }
+  
+  .main .routing{
+    margin-top: 70px;
+  }
+  
+  .main .routing .account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  .main .routing .account button{
+    width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+  background-color: #004CFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .main .routing {
+      margin-top: 220px;
+    }
+  }
