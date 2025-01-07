@@ -1,9 +1,9 @@
 .signUp {
   display: flex;
+  align-items: flex-start;
+  margin-left: 45px;
   flex-direction: column;
-  height: 100vh;
-  margin-left: 50px;
-  margin-top: 250px;
+  margin-top: 235px;
   font-family: Raleway;
   font-size: 30px;
   font-weight: 700;
@@ -29,3 +29,13 @@
 .SignUpForm input::placeholder {
     text-indent: 20px;
   }
+
+.SignUpForm button{
+  margin-top: 60px;
+  width: 335px;
+  height: 61px;
+  border-radius: 16px;
+  color: white;
+  border: none;
+font-size: 22px;  background-color: #004CFF;
+}

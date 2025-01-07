@@ -52,7 +52,7 @@ const CreateAccount = () => {
         <form className="SignUpForm" onSubmit={handleSubmit}>
           <div>
             <input
-            placeholder="email"
+              placeholder="email"
               type="email"
               name="email"
               value={formData.email}
@@ -62,7 +62,7 @@ const CreateAccount = () => {
           </div>
           <div>
             <input
-            placeholder="Password"
+              placeholder="Password"
               type="password"
               name="password"
               value={formData.password}
@@ -72,7 +72,7 @@ const CreateAccount = () => {
           </div>
           <div>
             <input
-            placeholder="phone number"
+              placeholder="phone number"
               type="tel"
               name="phoneNumber"
               value={formData.phoneNumber}
@@ -83,6 +83,7 @@ const CreateAccount = () => {
           <button type="submit">Done</button>
         </form>
       </div>
+
     </>
   );
 };
