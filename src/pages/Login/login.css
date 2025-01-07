@@ -2,7 +2,12 @@
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    margin-top: 600px;
     gap: 10px;
+}
+.login h1{
+    font-weight: 700;
+    font-size: 52px;
 }
 
 .login input{
@@ -13,12 +18,17 @@
  background-color: #F8F8F8;
 }
 
+.login input::placeholder{
+    padding-left: 20px;
+}
 .login button{
     width: 336px;
     height: 52px;
-    border-radius: 60px; 
+    border-radius: 16px; 
     border: none;
     color: white;
     background-color: #004CFF;
+    font-size: 20px;
+    font-weight: 300px;
 }
 
