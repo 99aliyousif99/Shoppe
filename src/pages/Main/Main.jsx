@@ -3,6 +3,7 @@ import "./main.css";
 import bagsImage from "../../assets/categories/bags.png";
 import categoriesData from "../../Data/categories.json";
 import Filter from "../../assets/filter.svg"
+import ProductCard from "../../components/ProductCard/ProductCard";
 const Main = () => {
   return (
     <>
@@ -24,7 +25,9 @@ const Main = () => {
         <div className="items">
           <h2>All Items</h2>
           <img src={Filter} alt="" />
+
         </div>
+        <ProductCard/>
       </div>
     </>
   );
