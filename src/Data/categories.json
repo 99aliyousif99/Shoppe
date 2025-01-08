@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "bags",
+      "image": "/src/assets/categories/bags.png"
+    },
+    {
+      "id": 2,
+      "name": "shoes",
+      "image": "/src/assets/categories/shoes.png"
+    },
+    {
+      "id": 3,
+      "name": "boots",
+      "image": "/src/assets/categories/boots.png"
+    },
+    {
+      "id": 4,
+      "name": "skirts",
+      "image": "/src/assets/categories/skirts.png"
+    },
+    {
+      "id": 5,
+      "name": "hats",
+      "image": "/src/assets/categories/hats.png"
+    },
+    {
+      "id": 6,
+      "name": "hoodies",
+      "image": "/src/assets/categories/hoodies.png"
+    }
+  ]
+}
