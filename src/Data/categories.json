@@ -1,34 +1,56 @@
 {
   "categories": [
     {
-      "id": 1,
+      
       "name": "bags",
       "image": "/src/assets/categories/bags.png"
     },
     {
-      "id": 2,
-      "name": "shoes",
-      "image": "/src/assets/categories/shoes.png"
-    },
-    {
-      "id": 3,
+     
       "name": "boots",
       "image": "/src/assets/categories/boots.png"
     },
     {
-      "id": 4,
-      "name": "skirts",
-      "image": "/src/assets/categories/skirts.png"
+     
+      "name": "glasses",
+      "image": "/src/assets/categories/glasses.png"
     },
     {
-      "id": 5,
+      
       "name": "hats",
       "image": "/src/assets/categories/hats.png"
     },
     {
-      "id": 6,
+      
       "name": "hoodies",
       "image": "/src/assets/categories/hoodies.png"
+    },
+    {
+      
+      "name": "makeup",
+      "image": "/src/assets/categories/makeup.png"
+    },
+    {
+      
+      "name": "shoes",
+      "image": "/src/assets/categories/shoes.png"
+    },
+    
+    {
+      
+      "name": "skirts",
+      "image": "/src/assets/categories/skirts.png"
+    },
+    {
+      
+      "name": "swim",
+      "image": "/src/assets/categories/swim.png"
+    },
+    {
+      "name": "watches",
+      "image": "/src/assets/categories/watches.png"
     }
+   
+    
   ]
 }
