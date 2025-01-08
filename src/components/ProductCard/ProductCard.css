@@ -1,0 +1,26 @@
+.card{
+    display:flex ;
+    flex-direction: column;
+    gap: 5px;
+}
+.card .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 165px;
+  height: 181px;
+  border-radius: 9px;
+  box-shadow: 0px 5px 10px 0px #0000001a;
+}
+.card .image img {
+  width: 155px;
+  height: 171px;
+  border-radius: 9px;
+}
+
+span {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: left;
+}

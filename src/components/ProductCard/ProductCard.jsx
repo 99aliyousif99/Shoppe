@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../../assets/ProductImage.png";
+import "./ProductCard.css"
 const ProductCard = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const ProductCard = () => {
         <div className="image">
           <img src={Image} alt="" />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Lorem ipsum dolor s</p>
         <span>17 $</span>
       </div>
     </>
