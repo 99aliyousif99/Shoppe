@@ -4,6 +4,8 @@ import bagsImage from "../../assets/categories/bags.png";
 import categoriesData from "../../Data/categories.json";
 import Filter from "../../assets/filter.svg"
 import ProductCard from "../../components/ProductCard/ProductCard";
+import productsData from "../../Data/Products.json";
+
 const Main = () => {
   return (
     <>
@@ -27,7 +29,11 @@ const Main = () => {
           <img src={Filter} alt="" />
 
         </div>
-        <ProductCard/>
+        <div className="product-grid">
+        {productsData.products.map((product) => (
+          <ProductCard key={product.name} product={product} />
+        ))}
+      </div>
       </div>
     </>
   );

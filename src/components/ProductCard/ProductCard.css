@@ -2,7 +2,6 @@
     display:flex ;
     flex-direction: column;
     gap: 5px;
-    row-gap: 10px;
 }
 .card .image {
   display: flex;
@@ -13,6 +12,7 @@
   height: 181px;
   border-radius: 9px;
   box-shadow: 0px 5px 10px 0px #0000001a;
+  cursor: pointer;
 }
 .card .image img {
   width: 155px;

@@ -1,17 +1,15 @@
 import React from "react";
-// import Image from "../../assets/ProductImages";
-import "./ProductCard.css"
-const ProductCard = () => {
+import "./ProductCard.css";
+
+const ProductCard = ({ product }) => {
   return (
-    <>
-      <div className="card">
-        <div className="image">
-          <img src={Image} alt="" />
-        </div>
-        <p>Lorem ipsum dolor s</p>
-        <span>17 $</span>
+    <div className="card">
+      <div className="image">
+        <img src={product.image} alt={product.name} />
       </div>
-    </>
+      <p>{product.name}</p>
+      <span>17 $</span>
+    </div>
   );
 };
 
