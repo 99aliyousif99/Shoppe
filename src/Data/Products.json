@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "product1",
+      "image": "/src/assets/productImages/productImage1.png"
+    },
+    {
+      "name": "product2",
+      "image": "/src/assets/productImages/productImage2.png"
+    },
+    {
+      "name": "product3",
+      "image": "/src/assets/productImages/productImage3.png"
+    },
+    {
+      "name": "product4",
+      "image": "/src/assets/productImages/productImage4.png"
+    }
+  ]
+}
