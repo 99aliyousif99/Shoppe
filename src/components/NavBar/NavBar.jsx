@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./NavBar.css";
 import { FiHome, FiShoppingBag } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
@@ -7,9 +8,11 @@ import { BsFilterSquare } from "react-icons/bs";
 
 const NavBar = () => {
   const [selectedIcon, setSelectedIcon] = useState(null);
+  const navigate = useNavigate();
 
-  const handleIconClick = (icon) => {
+  const handleIconClick = (icon, path) => {
     setSelectedIcon(icon);
+    navigate(path);
   };
 
   return (
@@ -17,27 +20,27 @@ const NavBar = () => {
       <FiHome
         size={30}
         color={selectedIcon === 'home' ? 'black' : '#004CFF'}
-        onClick={() => handleIconClick('home')}
+        onClick={() => handleIconClick('home', '/')}
       />
       <FiShoppingBag
         size={30}
         color={selectedIcon === 'shoppingBag' ? 'black' : '#004CFF'}
-        onClick={() => handleIconClick('shoppingBag')}
+        onClick={() => handleIconClick('shoppingBag', '/cart')}
       />
       <CiHeart
         size={30}
         color={selectedIcon === 'heart' ? 'black' : '#004CFF'}
-        onClick={() => handleIconClick('heart')}
+        onClick={() => handleIconClick('heart', '/favorites')}
       />
       <RxAvatar
         size={30}
         color={selectedIcon === 'avatar' ? 'black' : '#004CFF'}
-        onClick={() => handleIconClick('avatar')}
+        onClick={() => handleIconClick('avatar', '/profile')}
       />
       <BsFilterSquare
         size={30}
         color={selectedIcon === 'filter' ? 'black' : '#004CFF'}
-        onClick={() => handleIconClick('filter')}
+        onClick={() => handleIconClick('filter', '/filter')}
       />
     </div>
   );
