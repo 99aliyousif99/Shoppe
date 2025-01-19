@@ -1,9 +1,7 @@
-.product {
+.prod {
   background-color: white;
   width: 100%;
   height: 100%;
-  border-radius: 20px 20px 0 0;
-  padding: 20px;
   box-shadow: 0px -1px 1px 0px #0000001a;
   transform: translateY(100%);
   color: black;
@@ -11,7 +9,22 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.product-overlay .product {
+.product-overlay .prod {
   transform: translateY(0);
 }
 
+.prod .imageCover{
+  display: flex;
+  align-items: center;
+}
+.prod .imageCover img{
+  width: 100%;
+  outline-offset: 20px;
+}
+
+
+.prod .options{
+padding: 20px;
+border-radius: 10px 10px 10px 10px;
+
+}

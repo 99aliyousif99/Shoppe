@@ -4,40 +4,40 @@
       "name": "product1",
       "image": "/src/assets/productImages/productImage1.png",
       "subImages": [
-        "/src/assets/Subimages/subImage1",
-        "/src/assets/Subimages/subImage2",
-        "/src/assets/Subimages/subImage3",
-        "/src/assets/Subimages/subImage4"
+        "/src/assets/Subimages/sub1.png",
+        "/src/assets/SubImages/sub2.png",
+        "/src/assets/SubImages/sub3.png",
+        "/src/assets/SubImages/sub4.png"
       ]
     },
     {
       "name": "product2",
       "image": "/src/assets/productImages/productImage2.png",
       "subImages": [
-        "/src/assets/Subimages/subImage1",
-        "/src/assets/Subimages/subImage2",
-        "/src/assets/Subimages/subImage3",
-        "/src/assets/Subimages/subImage4"
+        "/src/assets/Subimages/sub1.png",
+        "/src/assets/SubImages/sub2.png",
+        "/src/assets/SubImages/sub3.png",
+        "/src/assets/SubImages/sub4.png"
       ]
     },
     {
       "name": "product3",
       "image": "/src/assets/productImages/productImage3.png",
       "subImages": [
-        "/src/assets/Subimages/subImage1",
-        "/src/assets/Subimages/subImage2",
-        "/src/assets/Subimages/subImage3",
-        "/src/assets/Subimages/subImage4"
+        "/src/assets/Subimages/sub1.png",
+        "/src/assets/SubImages/sub2.png",
+        "/src/assets/SubImages/sub3.png",
+        "/src/assets/SubImages/sub4.png"
       ]
     },
     {
       "name": "product4",
       "image": "/src/assets/productImages/productImage4.png",
       "subImages": [
-        "/src/assets/Subimages/subImage1",
-        "/src/assets/Subimages/subImage2",
-        "/src/assets/Subimages/subImage3",
-        "/src/assets/Subimages/subImage4"
+        "/src/assets/Subimages/sub1.png",
+        "/src/assets/SubImages/sub2.png",
+        "/src/assets/SubImages/sub3.png",
+        "/src/assets/SubImages/sub4.png"
       ]
     }
   ]
