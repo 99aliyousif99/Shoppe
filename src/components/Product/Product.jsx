@@ -11,9 +11,13 @@ const Product = ({ product, onClose }) => {
       </div>
       <div className="options">
         <p>color options</p>
-         <div className="colors">
+        <div className="colors">
+          <img src={product.subImages[0]} alt="" />
           <img src={product.subImages[1]} alt="" />
-         </div>
+          <img src={product.subImages[2]} alt="" />
+          <img src={product.subImages[3]} alt="" />
+        </div>
+        <p>Size</p>
       </div>
     </div>
   );
