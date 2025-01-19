@@ -18,6 +18,7 @@ const Product = ({ product, onClose }) => {
           <img src={product.subImages[3]} alt="" />
         </div>
         <p>Size</p>
+        
       </div>
     </div>
   );
