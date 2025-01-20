@@ -24,14 +24,26 @@ const Product = ({ product, onClose }) => {
         </div>
         <p>Size</p>
         <div className="size">
-        {sizes.map((size) => (
-          <div className="sizes" onClick={() => handleSize(size)} style={{
-             border: selectedSize === size ? "2px solid #004CFF" : "none",
-             backgroundColor : selectedSize === size ?"#E5EBFC ":"f9f9f9"
-          }}>
-            {size}
+          {sizes.map((size) => (
+            <div
+              className="sizes"
+              onClick={() => handleSize(size)}
+              style={{
+                border: selectedSize === size ? "2px solid #004CFF" : "none",
+                backgroundColor: selectedSize === size ? "#E5EBFC " : "f9f9f9",
+              }}
+            >
+              {size}
+            </div>
+          ))}
+        </div>
+        <div className="quantity">
+          <p>Quantity</p>
+          <div className="amount">
+            <div className="decrease">-</div>
+            <div className="num"></div>
+            <div className="increase">+</div>
           </div>
-        ))}
         </div>
       </div>
     </div>

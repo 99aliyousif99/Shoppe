@@ -59,3 +59,46 @@
   height: 25px;
   border-radius: 4px;
 }
+
+.quantity{
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.amount{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.amount .decrease{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #004CFF;
+  color: #004CFF;
+  cursor: pointer;
+}
+
+
+.amount .num{
+  width: 70px;
+  height: 50px;
+  background-color: #E5EBFC;
+  border-radius: 16px;
+}
+
+.amount .increase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #004CFF;
+  color: #004CFF;
+  cursor: pointer;
+}
