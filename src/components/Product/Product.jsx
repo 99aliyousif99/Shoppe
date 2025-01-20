@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { CiHeart } from "react-icons/ci";
+
 import "./Product.css";
 
 const Product = ({ product, onClose }) => {
@@ -45,7 +47,13 @@ const Product = ({ product, onClose }) => {
             <div className="increase">+</div>
           </div>
         </div>
+
+       
       </div>
+      <div className="addTo">
+          <div className="favorites"><CiHeart />
+          </div>
+        </div>
     </div>
   );
 };
