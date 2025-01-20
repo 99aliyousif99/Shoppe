@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.css";
 
 const Product = ({ product, onClose }) => {
+  const [selectedSize, setSelectedSize] = useState(null);
+  const sizes = ["S", "M", "L", "XL", "XXL", "XXXL"];
+  const handleSize = (size) => {
+    setSelectedSize(size);
+  };
   console.log(product);
 
   return (
@@ -18,7 +23,16 @@ const Product = ({ product, onClose }) => {
           <img src={product.subImages[3]} alt="" />
         </div>
         <p>Size</p>
-        
+        <div className="size">
+        {sizes.map((size) => (
+          <div className="sizes" onClick={() => handleSize(size)} style={{
+             border: selectedSize === size ? "2px solid #004CFF" : "none",
+             backgroundColor : selectedSize === size ?"#E5EBFC ":"f9f9f9"
+          }}>
+            {size}
+          </div>
+        ))}
+        </div>
       </div>
     </div>
   );
