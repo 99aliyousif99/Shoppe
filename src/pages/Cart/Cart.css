@@ -31,3 +31,25 @@
   border-radius: 1000px;
   font-size: 20px;
 }
+.cartProduct {
+    margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 105px;
+ font-size: 12px;
+}
+
+
+.cartProduct .image{
+    width: 122px;
+    height: 101px;
+    background-color: black;
+    border-radius: 9px;
+}
+
+.cartProduct .info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

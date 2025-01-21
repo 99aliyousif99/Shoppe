@@ -18,6 +18,14 @@ const Cart = () => {
             </button>
           </div>
         </div>
+        <div className="cartProduct">
+          <div className="image"></div>
+          <div className="info">
+          <p className="name">Lorem ipsum dolor sit amet </p>
+          <p className="size">size M</p>
+          </div>
+          
+        </div>
       </div>
     </>
   );
