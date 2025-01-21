@@ -3,6 +3,7 @@
     {
       "name": "product1",
       "image": "/src/assets/productImages/productImage1.png",
+      "price": "17.00",
       "subImages": [
         "/src/assets/Subimages/sub1.png",
         "/src/assets/SubImages/sub2.png",
@@ -13,6 +14,7 @@
     {
       "name": "product2",
       "image": "/src/assets/productImages/productImage2.png",
+      "price": "17.00",
       "subImages": [
         "/src/assets/Subimages/sub1.png",
         "/src/assets/SubImages/sub2.png",
@@ -23,6 +25,7 @@
     {
       "name": "product3",
       "image": "/src/assets/productImages/productImage3.png",
+      "price": "17.00",
       "subImages": [
         "/src/assets/Subimages/sub1.png",
         "/src/assets/SubImages/sub2.png",
@@ -33,6 +36,7 @@
     {
       "name": "product4",
       "image": "/src/assets/productImages/productImage4.png",
+      "price": "17.00",
       "subImages": [
         "/src/assets/Subimages/sub1.png",
         "/src/assets/SubImages/sub2.png",
