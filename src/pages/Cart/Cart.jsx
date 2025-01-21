@@ -1,8 +1,10 @@
 import React from "react";
 import "./cart.css";
 import { MdOutlineEdit } from "react-icons/md";
-
+import useCartStore from "../../store/cartStore";
 const Cart = () => {
+  const cart = useCartStore((state) => state.cart);
+  console.log(cart)
   return (
     <>
       <div className="cart">

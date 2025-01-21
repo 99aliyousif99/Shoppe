@@ -3,10 +3,12 @@ import { CiHeart } from "react-icons/ci";
 import "./Product.css";
 import QuantitySelector from "../QuantitySelector/QuantitySelector";
 
+import useCartStore from "../../store/cartStore";
+
 const Product = ({ product, onClose }) => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1); 
-  const [cart, setCart] = useState([]);
+  const addToCart = useCartStore((state) => state.addToCart);
   const sizes = ["S", "M", "L", "XL", "XXL", "XXXL"];
 
   const handleSize = (size) => {
@@ -23,9 +25,9 @@ const Product = ({ product, onClose }) => {
       size: selectedSize,
       quantity: quantity,
     };
-    setCart([...cart, productDetails]);
-    console.log("Cart:", cart);
+    addToCart(productDetails);
   };
+
 
   return (
     <div className="prod">
