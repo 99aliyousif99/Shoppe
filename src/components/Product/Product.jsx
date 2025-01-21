@@ -1,25 +1,22 @@
 import React, { useState } from "react";
 import { CiHeart } from "react-icons/ci";
-
 import "./Product.css";
+import QuantitySelector from "../QuantitySelector/QuantitySelector";
 
 const Product = ({ product, onClose }) => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1); 
   const [cart, setCart] = useState([]);
   const sizes = ["S", "M", "L", "XL", "XXL", "XXXL"];
+
   const handleSize = (size) => {
     setSelectedSize(size);
   };
-  const handleIncrease = () => {
-    setQuantity(quantity + 1);
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
   };
 
-  const handleDecrease = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
   const handleAddToCart = () => {
     const productDetails = {
       ...product,
@@ -29,7 +26,6 @@ const Product = ({ product, onClose }) => {
     setCart([...cart, productDetails]);
     console.log("Cart:", cart);
   };
-  console.log(product);
 
   return (
     <div className="prod">
@@ -59,23 +55,13 @@ const Product = ({ product, onClose }) => {
             </div>
           ))}
         </div>
-        <div className="quantity">
-          <p>Quantity</p>
-          <div className="amount">
-            <div className="decrease" onClick={handleDecrease}>-</div>
-            <div className="num">{quantity}</div>
-            <div className="increase" onClick={handleIncrease}>+</div>
-          </div>
-        </div>
-
-       
+        <QuantitySelector initialQuantity={quantity} onQuantityChange={handleQuantityChange} />
       </div>
       <div className="addTo">
-          <div className="favorites"><CiHeart />
-          </div>
-          <div className="addcart" onClick={handleAddToCart}>Add to cart</div>
-          <div className="buy">Buy now</div>
-        </div>
+        <div className="favorites"><CiHeart /></div>
+        <div className="addcart" onClick={handleAddToCart}>Add to cart</div>
+        <div className="buy">Buy now</div>
+      </div>
     </div>
   );
 };
