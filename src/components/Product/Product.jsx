@@ -5,9 +5,29 @@ import "./Product.css";
 
 const Product = ({ product, onClose }) => {
   const [selectedSize, setSelectedSize] = useState(null);
+  const [quantity, setQuantity] = useState(1); 
+  const [cart, setCart] = useState([]);
   const sizes = ["S", "M", "L", "XL", "XXL", "XXXL"];
   const handleSize = (size) => {
     setSelectedSize(size);
+  };
+  const handleIncrease = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const handleDecrease = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+  const handleAddToCart = () => {
+    const productDetails = {
+      ...product,
+      size: selectedSize,
+      quantity: quantity,
+    };
+    setCart([...cart, productDetails]);
+    console.log("Cart:", cart);
   };
   console.log(product);
 
@@ -42,9 +62,9 @@ const Product = ({ product, onClose }) => {
         <div className="quantity">
           <p>Quantity</p>
           <div className="amount">
-            <div className="decrease">-</div>
-            <div className="num"></div>
-            <div className="increase">+</div>
+            <div className="decrease" onClick={handleDecrease}>-</div>
+            <div className="num">{quantity}</div>
+            <div className="increase" onClick={handleIncrease}>+</div>
           </div>
         </div>
 
@@ -53,6 +73,8 @@ const Product = ({ product, onClose }) => {
       <div className="addTo">
           <div className="favorites"><CiHeart />
           </div>
+          <div className="addcart" onClick={handleAddToCart}>Add to cart</div>
+          <div className="buy">Buy now</div>
         </div>
     </div>
   );
