@@ -26,6 +26,7 @@ const Profile = () => {
             <BsTextRight />
           </div>
         </div>
+        
       </div>
     </>
   );

@@ -28,7 +28,7 @@
 .settings {
     display: flex;
     align-items: center;
-   gap: 30px;
+   gap: 20px;
 }
 .settings .container{
     display: flex;
