@@ -1,7 +1,11 @@
+.profile{
+    padding: 20px;
+}
+
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 40px;
 }
 .header .name{
@@ -33,10 +37,26 @@
 .settings .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 35px;
     height: 35px;
     background-color: #E5EBFC;
     border-radius: 50px;
     font-size: 22px;
+}
+
+.rewards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40PX;
+}
+
+.rewards button{
+    width: 160px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: #E5EBFC;
+    border: none;
+    cursor: pointer;
 }

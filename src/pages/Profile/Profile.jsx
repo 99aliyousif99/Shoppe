@@ -8,25 +8,30 @@ import { BsTextRight } from "react-icons/bs";
 const Profile = () => {
   return (
     <>
-      <div className="header">
-        <div className="name">
-          <div className="avatar">
-            <img src={avatar} alt="" />
+      <div className="profile">
+        <div className="header">
+          <div className="name">
+            <div className="avatar">
+              <img src={avatar} alt="" />
+            </div>
+            <h2>Vouchers</h2>
           </div>
-          <h2>Vouchers</h2>
+          <div className="settings">
+            <div className="container">
+              <LuScanLine />
+            </div>
+            <div className="container">
+              <CiSettings />
+            </div>
+            <div className="container">
+              <BsTextRight />
+            </div>
+          </div>
         </div>
-        <div className="settings">
-          <div className="container">
-            <LuScanLine />
-          </div>
-          <div className="container">
-            <CiSettings />
-          </div>
-          <div className="container">
-            <BsTextRight />
-          </div>
+        <div className="rewards">
+          <button>Active Rewards</button>
+          <button>Progress</button>
         </div>
-        
       </div>
     </>
   );
