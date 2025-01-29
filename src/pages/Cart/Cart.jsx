@@ -35,6 +35,7 @@ const Cart = () => {
   };
 
   return (
+    <>
     <div className="cart">
       <h1>Cart</h1>
       <div className="shipping">
@@ -68,6 +69,8 @@ const Cart = () => {
         </div>
       ))}
     </div>
+    
+    </>
   );
 };
 

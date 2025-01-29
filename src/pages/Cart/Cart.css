@@ -67,5 +67,6 @@
 .cartProduct .price{
   display: flex;
   align-items: center;
+  gap: 80px;
   justify-content: space-around;
 }
