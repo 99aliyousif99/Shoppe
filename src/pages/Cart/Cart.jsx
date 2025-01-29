@@ -68,6 +68,7 @@ const Cart = () => {
           </div>
         </div>
       ))}
+      <div className="total"></div>
     </div>
     
     </>
