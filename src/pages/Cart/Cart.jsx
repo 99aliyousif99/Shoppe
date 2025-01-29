@@ -15,6 +15,7 @@ const Cart = () => {
   );
 
 console.log(cart)
+
 const totalValue =()=>{
   let total =0
   for (let items of cart){
