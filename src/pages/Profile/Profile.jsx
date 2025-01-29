@@ -32,6 +32,7 @@ const Profile = () => {
           <button>Active Rewards</button>
           <button>Progress</button>
         </div>
+        
       </div>
     </>
   );
