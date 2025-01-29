@@ -6,6 +6,7 @@ import QuantitySelector from "../../components/QuantitySelector/QuantitySelector
 
 const Cart = () => {
   const cart = useCartStore((state) => state.cart);
+  const removeFromCart = useCartStore((state) => state.removeFromCart);
   const [quantities, setQuantities] = useState(
     cart.reduce((acc, product) => {
       acc[product.id] = product.quantity || 1;
@@ -14,12 +15,23 @@ const Cart = () => {
   );
 
   const handleQuantityChange = (productId, newQuantity) => {
-    setQuantities((prevQuantities) => ({
-      ...prevQuantities,
-      [productId]: newQuantity,
+    if (newQuantity < 1) {
+      handleRemoveFromCart(productId);
+    } else {
+      setQuantities((prevQuantities) => ({
+        ...prevQuantities,
+        [productId]: newQuantity,
+      }));
+    }
+  };
 
-    }));
-    console.log(cart)
+  const handleRemoveFromCart = (productId) => {
+    removeFromCart(productId);
+    setQuantities((prevQuantities) => {
+      const newQuantities = { ...prevQuantities };
+      delete newQuantities[productId];
+      return newQuantities;
+    });
   };
 
   return (

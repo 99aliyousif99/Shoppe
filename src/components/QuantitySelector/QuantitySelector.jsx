@@ -15,11 +15,9 @@ const QuantitySelector = ({ initialQuantity, onQuantityChange, size }) => {
   };
 
   const handleDecrease = () => {
-    if (quantity > 1) {
-      const newQuantity = quantity - 1;
-      setQuantity(newQuantity);
-      onQuantityChange(newQuantity);
-    }
+    const newQuantity = quantity - 1;
+    setQuantity(newQuantity);
+    onQuantityChange(newQuantity);
   };
 
   return (
