@@ -14,6 +14,15 @@ const Cart = () => {
     }, {})
   );
 
+console.log(cart)
+const totalValue =()=>{
+  let total =0
+  for (let items of cart){
+     total += items.price
+  }
+  return total
+}
+console.log(totalValue())
   const handleQuantityChange = (productId, newQuantity) => {
     if (newQuantity < 1) {
       handleRemoveFromCart(productId);
@@ -33,7 +42,7 @@ const Cart = () => {
       return newQuantities;
     });
   };
-
+ 
   return (
     <>
       <div className="cart">
@@ -70,7 +79,7 @@ const Cart = () => {
         ))}
       </div>
       <div className="total">
-        <p>total</p>
+        <p>total </p>
         <button>checkout</button>
       </div>
     </>
