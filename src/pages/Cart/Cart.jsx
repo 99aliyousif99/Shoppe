@@ -3,6 +3,7 @@ import "./cart.css";
 import { MdOutlineEdit } from "react-icons/md";
 import useCartStore from "../../store/cartStore";
 import QuantitySelector from "../../components/QuantitySelector/QuantitySelector";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const cart = useCartStore((state) => state.cart);
@@ -13,8 +14,13 @@ const Cart = () => {
       return acc;
     }, {})
   );
+  const navigate = useNavigate();
 
 console.log(cart)
+
+const handleCheckout = () => {
+  navigate("/checkout");
+};
 
 const totalValue =()=>{
   let total =0
@@ -81,7 +87,7 @@ console.log(totalValue())
       </div>
       <div className="total">
         <p>total ${totalValue()}</p>
-        <button>checkout</button>
+        <button onClick={handleCheckout}>checkout</button>
       </div>
     </>
   );
