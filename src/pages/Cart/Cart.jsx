@@ -18,7 +18,7 @@ console.log(cart)
 const totalValue =()=>{
   let total =0
   for (let items of cart){
-     total += items.price
+     total += items.price * items.quantity
   }
   return total
 }
@@ -79,7 +79,7 @@ console.log(totalValue())
         ))}
       </div>
       <div className="total">
-        <p>total </p>
+        <p>total ${totalValue()}</p>
         <button>checkout</button>
       </div>
     </>
