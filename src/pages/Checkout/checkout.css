@@ -72,3 +72,33 @@
     height: 22px;
     
 }
+
+.stuff h3{
+    margin-left: auto;
+}
+.shippingOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shippingOptions .standard{
+    display: flex;
+    align-items: center;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+.shippingOptions .express{
+    display: flex;
+    align-items: center;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.icon{
+    font-size: 2em;
+}
