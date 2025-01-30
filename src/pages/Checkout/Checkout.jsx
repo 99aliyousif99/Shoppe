@@ -44,10 +44,16 @@ const Checkout = () => {
             <div className="standard">
               <IoIosCheckmarkCircle className="icon"/>
               <h3>Standard</h3>
+              <div className="time">5-7 days</div>
+              <h4>Free</h4>
             </div>
             <div className="express"><IoIosCheckmarkCircle className="icon" />
             <h3>Express</h3>
+
+            <div className="time">1-2 days</div>
+            <h4>$12.99</h4>
             </div>
+            <p>Delivered on or before Thursday, 23 April 2020</p>
           </div>
         </div>
       </div>

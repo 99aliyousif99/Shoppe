@@ -37,11 +37,10 @@
   border-color: #004bfe;
   color: #004bfe;
 }
-.stuff{
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    
+.stuff {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
 }
 .stuff .stuffimg {
   width: 60px;
@@ -52,53 +51,78 @@
   align-items: center;
   justify-content: center;
 }
-.stuffimg{
-    position: relative;
+.stuffimg {
+  position: relative;
 }
 .stuff .stuffimg img {
   border-radius: 50px;
 }
 
-.stuff .num{
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E5EBFC;
-    width: 22px;
-    height: 22px;
-    
+.stuff .num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5ebfc;
+  width: 22px;
+  height: 22px;
 }
 
-.stuff h3{
-    margin-left: auto;
+.stuff h3 {
+  margin-left: auto;
 }
 .shippingOptions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
 }
 
-.shippingOptions .standard{
-    display: flex;
-    align-items: center;
-    background-color: #F9F9F9;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
+.shippingOptions .standard {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
 }
-.shippingOptions .express{
-    display: flex;
-    align-items: center;
-    background-color: #F9F9F9;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
+.shippingOptions .standard h4 {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 25px;
+}
+.shippingOptions .express {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
 }
 
-.icon{
-    font-size: 2em;
+.shippingOptions .express h4 {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 25px;
+}
+.icon {
+  font-size: 2em;
+  color: #0042E0;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px 0px #00000029;
+  margin-left: 10px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f8ff;
+  width: 72px;
+  height: 30px;
 }
