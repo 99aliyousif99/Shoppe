@@ -39,6 +39,9 @@
 }
 .stuff{
     padding-top: 30px;
+    display: flex;
+    align-items: center;
+    
 }
 .stuff .stuffimg {
   width: 60px;

@@ -33,6 +33,7 @@ const Checkout = () => {
               <img src="https://picsum.photos/50/50" alt="" />
               <div className="num">1</div>
             </div>
+            <p>name</p>
           </div>
         </div>
       </div>
