@@ -57,6 +57,10 @@ const Checkout = () => {
           </div>
         </div>
       </div>
+      <div className="total">
+        <p>total ${totalValue()}</p>
+        <button>Pay</button>
+      </div>
     </>
   );
 };
