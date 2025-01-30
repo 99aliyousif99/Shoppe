@@ -4,6 +4,7 @@ import { MdOutlineEdit } from "react-icons/md";
 import useCartStore from "../../store/cartStore";
 import QuantitySelector from "../../components/QuantitySelector/QuantitySelector";
 import { useNavigate } from "react-router-dom";
+import Address from "../../components/Address/Address";
 
 const Cart = () => {
   const cart = useCartStore((state) => state.cart);
@@ -54,15 +55,7 @@ console.log(totalValue())
     <>
       <div className="cart">
         <h1>Cart</h1>
-        <div className="shipping">
-          <span>Shipping address</span>
-          <div className="location">
-            <p>26, Duong So 2, Thao Dien Ward</p>
-            <button className="editAddress">
-              <MdOutlineEdit />
-            </button>
-          </div>
-        </div>
+        <Address />
         {cart.map((product) => (
           <div key={product.id} className="cartProduct">
             <div className="image">

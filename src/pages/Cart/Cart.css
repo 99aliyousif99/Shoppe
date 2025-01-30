@@ -5,34 +5,7 @@
   flex-direction: column;
 }
 
-.shipping {
-  width: 335px;
-  height: 70px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  margin-top: 20px;
-  padding: 10px;
-}
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-.editAddress {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: solid;
-  border-color: none;
-  background-color: #004bfe;
-  color: #f9f9f9;
-  border-radius: 1000px;
-  font-size: 20px;
-}
+
 .cartProduct {
   margin-top: 20px;
   display: flex;
