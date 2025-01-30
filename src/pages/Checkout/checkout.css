@@ -37,3 +37,35 @@
   border-color: #004bfe;
   color: #004bfe;
 }
+.stuff{
+    padding-top: 30px;
+}
+.stuff .stuffimg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px 0px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stuffimg{
+    position: relative;
+}
+.stuff .stuffimg img {
+  border-radius: 50px;
+}
+
+.stuff .num{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5EBFC;
+    width: 22px;
+    height: 22px;
+    
+}

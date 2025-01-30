@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 import "./Checkout.css";
 import useCartStore from "../../store/cartStore";
 import Address from "../../components/Address/Address";
 
 const Checkout = () => {
   const cart = useCartStore((state) => state.cart);
- 
-  console.log(cart)
-  const totalValue =()=>{
-    let total =0
-    for (let items of cart){
-       total += items.price * items.quantity
+
+  console.log(cart);
+  const totalValue = () => {
+    let total = 0;
+    for (let items of cart) {
+      total += items.price * items.quantity;
     }
-    return total
-  }
+    return total;
+  };
 
   return (
     <>
@@ -23,16 +23,21 @@ const Checkout = () => {
         <div className="products">
           <div className="vouchers">
             <div className="ems">
-            <h2>items</h2>
-            <div className="quan">{cart.length}</div>
+              <h2>items</h2>
+              <div className="quan">{cart.length}</div>
             </div>
             <button>Add Voucher</button>
           </div>
+          <div className="stuff">
+            <div className="stuffimg">
+              <img src="https://picsum.photos/50/50" alt="" />
+              <div className="num">1</div>
+            </div>
+          </div>
         </div>
       </div>
-    
     </>
-  )
-}
+  );
+};
 
-export default Checkout
+export default Checkout;
