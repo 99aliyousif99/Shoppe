@@ -32,6 +32,16 @@ const Address = () => {
           <div className="name">
             <h1>Shipping Address</h1>
           </div>
+          <div className="edit">
+            <p>Address</p>
+            <input type="text" name="" id="" />
+            <p>Town/City</p>
+            <input type="text" name="" id="" />
+            <p>Poscode</p>
+            <input type="text" name="" id="" />
+
+            <button>Save Changes</button>
+          </div>
         </div>
       </Drawer>
     </>

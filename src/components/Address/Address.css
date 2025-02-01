@@ -39,3 +39,33 @@
     height: 80px;
     background-color: #F8FAFF;
   }
+
+  .edit{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .edit p{
+    padding-top: 15px;
+  }
+
+  .edit input{
+    width: 220px;
+    background: #F1F4FE;
+    border-radius: 9px;
+    height: 23px;
+    border: none;
+  }
+
+
+  .edit button{
+    margin-top: 100px;
+    width: 220px;
+    height: 30px;
+    border-radius: 9px;
+    border: none;
+    background-color: #004CFF;
+    color: white;
+  }
