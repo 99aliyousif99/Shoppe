@@ -9,14 +9,14 @@
   align-items: center;
   justify-content: center;
   border: none;
-  width: 165px;
+  width: 175px;
   height: 181px;
   border-radius: 9px;
-  box-shadow: 0px 5px 10px 0px #0000001a;
+  box-shadow: 0px 10px 10px 0px #0000001a;
   cursor: pointer;
 }
 .card .image img {
-  width: 155px;
+  width: 160px;
   height: 171px;
   border-radius: 9px;
 }
@@ -41,7 +41,7 @@ span {
   background-color: white;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0px -1px 1px 0px #0000001a;
   transition: transform 0.3s ease-in-out;
 }
