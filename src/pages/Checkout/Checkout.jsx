@@ -30,14 +30,17 @@ const Checkout = () => {
             <button>Add Voucher</button>
           </div>
 
-          <div className="stuff">
-            <div className="stuffimg">
-              <img src="https://picsum.photos/50/50" alt="" />
-              <div className="num">1</div>
-            </div>
-            <p>name</p>
-            <h3>$17,00</h3>
-          </div>
+          {cart.map((product) => (
+    <div key={product.id} className="stuff">
+      <div className="stuffimg">
+        <img src={product.image} alt={product.name} />
+        <div className="num">{product.quantity}</div>
+      </div>
+      <p>{product.name}</p>
+      <h3>${(product.price * product.quantity).toFixed(2)}</h3>
+    </div>
+  ))}
+
           <div className="shippingOptions">
             <h2>Shipping Options</h2>
 

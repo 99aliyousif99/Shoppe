@@ -33,6 +33,7 @@
   }
   .locations .name h1{
     padding: 30px;
+    padding-left: 45px;
   }
   .locations .name{
     width: 100%;
@@ -41,7 +42,7 @@
   }
 
   .edit{
-    padding-left: 30px;
+    padding-left: 45px;
     display: flex;
     flex-direction: column;
   }
@@ -52,7 +53,7 @@
   }
 
   .edit input{
-    width: 220px;
+    width:335px;
     background: #F1F4FE;
     border-radius: 9px;
     height: 23px;
@@ -62,8 +63,8 @@
 
   .edit button{
     margin-top: 100px;
-    width: 220px;
-    height: 30px;
+    width:335px;
+    height: 37px;
     border-radius: 9px;
     border: none;
     background-color: #004CFF;
