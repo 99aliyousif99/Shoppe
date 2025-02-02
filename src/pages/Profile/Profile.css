@@ -1,5 +1,5 @@
 .profile {
-  padding: 20px;
+  padding: 30px;
 }
 
 .header {
@@ -53,8 +53,8 @@
 }
 
 .rewards button {
-  width: 190px;
-  height: 30px;
+  width: 170px;
+  height: 35px;
   border-radius: 18px;
   background-color: #e5ebfc;
   border: none;
