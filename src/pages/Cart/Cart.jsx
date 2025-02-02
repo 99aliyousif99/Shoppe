@@ -5,6 +5,7 @@ import useCartStore from "../../store/cartStore";
 import QuantitySelector from "../../components/QuantitySelector/QuantitySelector";
 import { useNavigate } from "react-router-dom";
 import Address from "../../components/Address/Address";
+import { GoTrash } from "react-icons/go";
 
 const Cart = () => {
   const cart = useCartStore((state) => state.cart);
@@ -17,20 +18,20 @@ const Cart = () => {
   );
   const navigate = useNavigate();
 
-console.log(cart)
+  console.log(cart);
 
-const handleCheckout = () => {
-  navigate("/checkout");
-};
+  const handleCheckout = () => {
+    navigate("/checkout");
+  };
 
-const totalValue =()=>{
-  let total =0
-  for (let items of cart){
-     total += items.price * items.quantity
-  }
-  return total
-}
-console.log(totalValue())
+  const totalValue = () => {
+    let total = 0;
+    for (let items of cart) {
+      total += items.price * items.quantity;
+    }
+    return total;
+  };
+  console.log(totalValue());
   const handleQuantityChange = (productId, newQuantity) => {
     if (newQuantity < 1) {
       handleRemoveFromCart(productId);
@@ -50,7 +51,7 @@ console.log(totalValue())
       return newQuantities;
     });
   };
- 
+
   return (
     <>
       <div className="cart">
@@ -60,6 +61,9 @@ console.log(totalValue())
           <div key={product.id} className="cartProduct">
             <div className="image">
               <img src={product.image} alt={product.name} />
+              <div className="trash" onClick={() => handleRemoveFromCart(product.id)}>
+                <GoTrash />
+              </div>
             </div>
             <div className="info">
               <p className="name">{product.name}</p>

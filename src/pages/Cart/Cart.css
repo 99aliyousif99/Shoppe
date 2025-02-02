@@ -15,7 +15,22 @@
   font-size: 12px;
 }
 
+.cartProduct .image .trash{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  bottom: 10px;
+  left: 10px;
+  color: #D97474;
+}
 .cartProduct .image {
+  position: relative;
   width: 110px;
   height: 101px;
   border-radius: 9px;
