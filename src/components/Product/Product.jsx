@@ -26,6 +26,7 @@ const Product = ({ product, onClose }) => {
       quantity: quantity,
     };
     addToCart(productDetails);
+    onClose();
   };
 
 
