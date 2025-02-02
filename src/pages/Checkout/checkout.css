@@ -5,7 +5,7 @@
   padding: 25px;
 }
 
-.vouchers {
+.voucher {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +16,7 @@
   align-items: center;
   gap: 10px;
 }
-.vouchers .quan {
+.voucher .quan {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@
   background-color: #e5ebfc;
 }
 
-.vouchers button {
+.voucher button {
   width: 120px;
   height: 30px;
   background: none;

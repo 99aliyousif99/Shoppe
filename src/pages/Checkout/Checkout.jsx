@@ -22,7 +22,7 @@ const Checkout = () => {
         <h1>payment</h1>
         <Address />
         <div className="products">
-          <div className="vouchers">
+          <div className="voucher">
             <div className="ems">
               <h2>items</h2>
               <div className="quan">{cart.length}</div>
