@@ -1,5 +1,5 @@
-.profile{
-    padding: 20px;
+.profile {
+  padding: 20px;
 }
 
 .header {
@@ -8,10 +8,10 @@
   justify-content: space-between;
   padding-top: 40px;
 }
-.header .name{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.header .name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .header .name .avatar {
   display: flex;
@@ -23,40 +23,58 @@
   box-shadow: 0px 3px 6px 0px #00000029;
 }
 
-.avatar img{
-    width:40px;
-    height: 40px;
-    border-radius: 50px;
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
 }
 
 .settings {
-    display: flex;
-    align-items: center;
-   gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.settings .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 35px;
-    height: 35px;
-    background-color: #E5EBFC;
-    border-radius: 50px;
-    font-size: 22px;
+.settings .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 35px;
+  height: 35px;
+  background-color: #e5ebfc;
+  border-radius: 50px;
+  font-size: 22px;
 }
 
 .rewards {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40PX;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
 }
 
-.rewards button{
-    width: 160px;
-    height: 30px;
-    border-radius: 18px;
-    background-color: #E5EBFC;
-    border: none;
-    cursor: pointer;
+.rewards button {
+  width: 190px;
+  height: 30px;
+  border-radius: 18px;
+  background-color: #e5ebfc;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.vouchers {
+margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.vouchers img{
+    
+
+    width: 105%;
 }
