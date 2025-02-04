@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Checkout.css";
+import "./checkout.css";
 import useCartStore from "../../store/cartStore";
 import Address from "../../components/Address/Address";
 import { IoIosCheckmarkCircle } from "react-icons/io";
