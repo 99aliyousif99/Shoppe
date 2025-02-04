@@ -114,7 +114,7 @@
 }
 .icon {
   font-size: 2em;
-  color: #0042E0;
+  color: white;
   border-radius: 50%;
   box-shadow: 0px 5px 10px 0px #00000029;
   margin-left: 10px;
@@ -127,4 +127,15 @@
   background-color: #f5f8ff;
   width: 72px;
   height: 30px;
+}
+
+.standard.selected,
+.express.selected {
+  background-color: #E5EBFC;
+  
+}
+
+.standard.selected .icon,
+.express.selected .icon {
+  color: blue;
 }
