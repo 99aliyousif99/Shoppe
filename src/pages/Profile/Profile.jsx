@@ -1,5 +1,5 @@
 import React from "react";
-import "./profile.css";
+import "./Profile.css";
 import avatar from "../../assets/avatar.png";
 import { CiSettings } from "react-icons/ci";
 import { LuScanLine } from "react-icons/lu";
