@@ -3,14 +3,14 @@ import "./Address.css";
 import { MdOutlineEdit } from "react-icons/md";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import useAddressStore from "../../store/addressStore.js";
 
 const Address = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [address, setAddress] = useState({
-    address: "",
-    townCity: "",
-    postcode: "",
-  });
+  const address = useAddressStore((state) => state.address);
+  const setAddress = useAddressStore((state) => state.setAddress);
+  const [localAddress, setLocalAddress] = useState(address);
+
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -18,13 +18,14 @@ const Address = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setAddress((prevAddress) => ({
+    setLocalAddress((prevAddress) => ({
       ...prevAddress,
       [name]: value,
     }));
   };
 
   const handleSubmit = () => {
+    setAddress(localAddress);
     console.log("new Drone strike Zone:", address);
     toggleDrawer();
   };
@@ -56,21 +57,21 @@ const Address = () => {
             <input
               type="text"
               name="address"
-              value={address.address}
+              value={localAddress.address}
               onChange={handleChange}
             />
             <p>Town/City</p>
             <input
               type="text"
               name="townCity"
-              value={address.townCity}
+              value={localAddress.townCity}
               onChange={handleChange}
             />
             <p>Postcode</p>
             <input
               type="text"
               name="postcode"
-              value={address.postcode}
+              value={localAddress.postcode}
               onChange={handleChange}
             />
             <button onClick={handleSubmit}>Save Changes</button>
