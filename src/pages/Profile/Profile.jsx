@@ -4,8 +4,8 @@ import avatar from "../../assets/avatar.png";
 import { CiSettings } from "react-icons/ci";
 import { LuScanLine } from "react-icons/lu";
 import { BsTextRight } from "react-icons/bs";
-import voucher1 from "../../assets/voucher1.svg";
-import voucher2 from "../../assets/voucher2.svg";
+import voucher1 from "../../assets/Voucher1.svg";
+import voucher2 from "../../assets/Voucher2.svg";
 const Profile = () => {
   return (
     <>
