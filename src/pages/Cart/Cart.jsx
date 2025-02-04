@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./cart.css";
+import "./Cart.css";
 import { MdOutlineEdit } from "react-icons/md";
 import useCartStore from "../../store/cartStore";
 import QuantitySelector from "../../components/QuantitySelector/QuantitySelector";
