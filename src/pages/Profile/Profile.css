@@ -1,12 +1,12 @@
 .profile {
-  padding: 30px;
+  padding: 20px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .header .name {
   display: flex;
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .rewards button {
@@ -59,22 +59,20 @@
   background-color: #e5ebfc;
   border: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
 }
 
 .vouchers {
-margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  
+
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
 
-.vouchers img{
-    
-
-    width: 105%;
+.vouchers img {
+  width: 105%;
 }
