@@ -3,7 +3,7 @@ import "./checkout.css";
 import useCartStore from "../../store/cartStore";
 import Address from "../../components/Address/Address";
 import { IoIosCheckmarkCircle } from "react-icons/io";
-
+import Vouchers from "../../components/Vouchers/Vouchers";
 const Checkout = () => {
   const cart = useCartStore((state) => state.cart);
   const [selectedShipping, setSelectedShipping] = useState("standard");
@@ -38,7 +38,7 @@ const Checkout = () => {
               <h2>items</h2>
               <div className="quan">{cart.length}</div>
             </div>
-            <button>Add Voucher</button>
+            <Vouchers/>
           </div>
 
           {cart.map((product) => (
