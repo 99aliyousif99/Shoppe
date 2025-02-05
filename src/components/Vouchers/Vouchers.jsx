@@ -7,6 +7,7 @@ import { FaGift } from "react-icons/fa6";
 import "./Vouchers.css";
 const Vouchers = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
