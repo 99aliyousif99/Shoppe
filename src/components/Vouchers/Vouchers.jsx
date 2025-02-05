@@ -5,13 +5,16 @@ import vouchersData from "../../Data/vouchers.json";
 import { FaGift } from "react-icons/fa6";
 
 import "./Vouchers.css";
-const Vouchers = () => {
+const Vouchers = ({ onApplyVoucher }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  
+
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
-
+  const handleApplyVoucher = (amount) => {
+    onApplyVoucher(amount);
+    toggleDrawer();
+  };
   return (
     <>
       <div className="vouchers">
@@ -28,7 +31,7 @@ const Vouchers = () => {
             <h2>Active Vouchers</h2>
           </div>
           <div className="avaliableVouchers">
-          {vouchersData.vouchers.map((voucher, index) => (
+            {vouchersData.vouchers.map((voucher, index) => (
               <div key={index} className="Avoucher">
                 <div className="voucherr">
                   <h3>Voucher</h3>
@@ -41,7 +44,7 @@ const Vouchers = () => {
                 </div>
                 <div className="amounts">
                   <p>{voucher.amount * 100}% off your next purchase</p>
-                  <button>Apply</button>
+                  <button onClick={() => handleApplyVoucher(voucher.amount)}>Apply</button>
                 </div>
               </div>
             ))}

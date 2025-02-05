@@ -7,7 +7,7 @@ import Vouchers from "../../components/Vouchers/Vouchers";
 const Checkout = () => {
   const cart = useCartStore((state) => state.cart);
   const [selectedShipping, setSelectedShipping] = useState("standard");
-
+  const [voucherAmount, setVoucherAmount] = useState(0);
 
   const handleShippingSelect = (option) => {
  
@@ -16,6 +16,11 @@ const Checkout = () => {
   };
 
   console.log(cart);
+
+  const handleApplyVoucher = (amount) => {
+    setVoucherAmount(amount);
+  };
+
   const totalValue = () => {
     let total = 0;
     if (selectedShipping ==="express") {
@@ -24,6 +29,7 @@ const Checkout = () => {
     for (let items of cart) {
       total += items.price * items.quantity;
     }
+    total -= total * voucherAmount;
     return total;
   };
 
@@ -38,7 +44,7 @@ const Checkout = () => {
               <h2>items</h2>
               <div className="quan">{cart.length}</div>
             </div>
-            <Vouchers/>
+            <Vouchers onApplyVoucher={handleApplyVoucher}/>
           </div>
 
           {cart.map((product) => (
@@ -83,7 +89,7 @@ const Checkout = () => {
         </div>
       </div>
       <div className="total">
-        <p>total ${totalValue()}</p>
+        <p>total ${totalValue().toFixed(2)}</p>
         <button>Pay</button>
       </div>
     </>
