@@ -27,21 +27,23 @@ const Vouchers = () => {
             <h2>Active Vouchers</h2>
           </div>
           <div className="avaliableVouchers">
-            <div className="Avoucher">
-              <div className="voucherr">
-                <h3>Voucher</h3>
-                <div className="validity">until 2025-10-12</div>
+          {vouchersData.vouchers.map((voucher, index) => (
+              <div key={index} className="Avoucher">
+                <div className="voucherr">
+                  <h3>Voucher</h3>
+                  <div className="validity">until {voucher.validity}</div>
+                </div>
+                <div className="dottedLine"></div>
+                <div className="voucherName">
+                  <FaGift style={{ color: "blue" }} />
+                  <h3>{voucher.name}</h3>
+                </div>
+                <div className="amounts">
+                  <p>{voucher.amount * 100}% off your next purchase</p>
+                  <button>Apply</button>
+                </div>
               </div>
-              <div className="voucherName">
-                <FaGift style={{color: "blue"}}/>
-                <h3>First purchase</h3>
-
-              </div>
-              <div className="amounts">
-                <p>15% off your next purchase</p>
-                <button>Apply</button>
-              </div>
-            </div>
+            ))}
           </div>
         </Drawer>
       </div>
