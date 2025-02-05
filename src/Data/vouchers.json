@@ -1,0 +1,14 @@
+{
+    "vouchers": [
+      {
+        "name": "First Purchase",
+        "validity": "2025-05-31",
+        "amount": 0.5
+      },
+      {
+        "name": "Holiday Discount",
+        "validity": "2026-12-25",
+        "amount": 0.15
+      }
+    ]
+  }
