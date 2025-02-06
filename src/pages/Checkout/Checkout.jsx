@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./checkout.css";
-import Popup from 'reactjs-popup';
+import Popup from "reactjs-popup";
+
 
 import useCartStore from "../../store/cartStore";
 import Address from "../../components/Address/Address";
@@ -12,9 +13,7 @@ const Checkout = () => {
   const [voucherAmount, setVoucherAmount] = useState(0);
 
   const handleShippingSelect = (option) => {
- 
     setSelectedShipping(option);
-
   };
 
   console.log(cart);
@@ -27,8 +26,8 @@ const Checkout = () => {
   };
   const totalValue = () => {
     let total = 0;
-    if (selectedShipping ==="express") {
-      total = 12
+    if (selectedShipping === "express") {
+      total = 12;
     }
     for (let items of cart) {
       total += items.price * items.quantity;
@@ -48,7 +47,7 @@ const Checkout = () => {
               <h2>items</h2>
               <div className="quan">{cart.length}</div>
             </div>
-            <Vouchers onApplyVoucher={handleApplyVoucher}/>
+            <Vouchers onApplyVoucher={handleApplyVoucher} />
           </div>
 
           {cart.map((product) => (
@@ -96,9 +95,14 @@ const Checkout = () => {
         <p>total ${totalValue().toFixed(2)}</p>
         <Popup trigger={<button>Pay</button>} modal>
           <div className="popup-content">
-            <h2>Payment</h2>
-            <p>Payment details go here...</p>
-            <button onClick={() => {}}>Close</button>
+            <div className="check">
+              <IoIosCheckmarkCircle />
+            </div>
+            <div className="words">
+              <h3>Done!</h3>
+              <p>You card has been successfully charged</p>
+              <button>Track My Order</button>
+            </div>
           </div>
         </Popup>
       </div>
