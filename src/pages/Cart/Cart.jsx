@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Cart.css";
 import { MdOutlineEdit } from "react-icons/md";
 import useCartStore from "../../store/cartStore";
@@ -10,6 +10,7 @@ import { GoTrash } from "react-icons/go";
 const Cart = () => {
   const cart = useCartStore((state) => state.cart);
   const removeFromCart = useCartStore((state) => state.removeFromCart);
+  const updateCart = useCartStore((state) => state.updateCart);
   const [quantities, setQuantities] = useState(
     cart.reduce((acc, product) => {
       acc[product.id] = product.quantity || 1;
@@ -18,7 +19,9 @@ const Cart = () => {
   );
   const navigate = useNavigate();
 
-  console.log(cart);
+  useEffect(() => {
+    updateCart(quantities);
+  }, [quantities, updateCart]);
 
   const handleCheckout = () => {
     navigate("/checkout");
@@ -31,7 +34,7 @@ const Cart = () => {
     }
     return total;
   };
-  console.log(totalValue());
+
   const handleQuantityChange = (productId, newQuantity) => {
     if (newQuantity < 1) {
       handleRemoveFromCart(productId);
