@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Drawer from "react-modern-drawer";
-import VoucherFrame from "../../assets/VoucherFrame.svg";
+import Popup from 'reactjs-popup';
 import vouchersData from "../../Data/vouchers.json";
 import { FaGift } from "react-icons/fa6";
 
@@ -15,6 +15,7 @@ const Vouchers = ({ onApplyVoucher }) => {
     onApplyVoucher(amount);
     toggleDrawer();
   };
+ 
   return (
     <>
       <div className="vouchers">

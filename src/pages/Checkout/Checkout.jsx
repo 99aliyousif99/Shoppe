@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./checkout.css";
+import Popup from 'reactjs-popup';
+
 import useCartStore from "../../store/cartStore";
 import Address from "../../components/Address/Address";
 import { IoIosCheckmarkCircle } from "react-icons/io";
@@ -20,7 +22,9 @@ const Checkout = () => {
   const handleApplyVoucher = (amount) => {
     setVoucherAmount(amount);
   };
-
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
   const totalValue = () => {
     let total = 0;
     if (selectedShipping ==="express") {
@@ -90,7 +94,13 @@ const Checkout = () => {
       </div>
       <div className="total">
         <p>total ${totalValue().toFixed(2)}</p>
-        <button>Pay</button>
+        <Popup trigger={<button>Pay</button>} modal>
+          <div className="popup-content">
+            <h2>Payment</h2>
+            <p>Payment details go here...</p>
+            <button onClick={() => {}}>Close</button>
+          </div>
+        </Popup>
       </div>
     </>
   );
