@@ -46,7 +46,6 @@ const Product = ({ product, onClose }) => {
             <img
               key={index}
               src={subImage}
-              alt=""
               onClick={() => handleImageClick(subImage)} 
             />
           ))}
