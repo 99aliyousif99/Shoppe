@@ -43,6 +43,7 @@ const Product = ({ product, onClose }) => {
         <p>color options</p>
         <div className="colors">
         {product.subImages.map((subImage, index) => (
+          
             <img
               key={index}
               src={subImage}
