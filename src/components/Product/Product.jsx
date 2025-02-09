@@ -10,7 +10,7 @@ const Product = ({ product, onClose }) => {
   const [quantity, setQuantity] = useState(1); 
   const addToCart = useCartStore((state) => state.addToCart);
   const sizes = ["S", "M", "L", "XL", "XXL", "XXXL"];
-
+  const [selectedImage, setSelectedImage] = useState(product.image); 
   const handleSize = (size) => {
     setSelectedSize(size);
   };
@@ -29,19 +29,27 @@ const Product = ({ product, onClose }) => {
     onClose();
   };
 
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
+
 
   return (
     <div className="prod">
       <div className="imageCover">
-        <img src={product.image} alt="" />
+        <img src={selectedImage} alt="" />
       </div>
       <div className="options">
         <p>color options</p>
         <div className="colors">
-          <img src={product.subImages[0]} alt="" />
-          <img src={product.subImages[1]} alt="" />
-          <img src={product.subImages[2]} alt="" />
-          <img src={product.subImages[3]} alt="" />
+        {product.subImages.map((subImage, index) => (
+            <img
+              key={index}
+              src={subImage}
+              alt=""
+              onClick={() => handleImageClick(subImage)} 
+            />
+          ))}
         </div>
         <p>Size</p>
         <div className="size">
